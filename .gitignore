@@ -1,47 +1,34 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# TFM excludes
+/lib
+build.properties
 
-# Folder config file
-Desktop.ini
+# Netbeans excludes
+/nbproject/private
+/dist
+/build
+manifest.mf
+# Now defines that Maven CheckStyle is used
+# nb-configuration.xml
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Eclipse excludes
+.project
+.classpath
+/bin
+/.settings
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# IntelliJ excludes
+*.iml
+*.ipr
+*.iws
+/.idea
 
-# Windows shortcuts
-*.lnk
+# Maven excludes
+/target
 
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+# OS generated files
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
 ._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
 .Spotlight-V100
-.TemporaryItems
 .Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+ehthumbs.db
+Thumbs.db
