@@ -7,8 +7,7 @@ public enum Title implements Displayable
 {
 
     DEVELOPER("a", "Developer", ChatColor.DARK_PURPLE, "Dev"),
-    EXECUTIVE("a", "Executive", ChatColor.GOLD, "Executive"),
-    SYSADMIN("a", "System-Admin", ChatColor.DARK_RED, "System-Admin"),
+    VFMDEVELOPER("a", "VFM Developer", ChatColor.DARK_PURPLE, "Dev"),
     OWNER("the", "Owner", ChatColor.BLUE, "Owner"),
     COOWNER("the", "Co-Owner", ChatColor.BLUE, "Co-Owner");
     
