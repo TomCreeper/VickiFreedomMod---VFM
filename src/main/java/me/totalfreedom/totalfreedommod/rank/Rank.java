@@ -13,7 +13,11 @@ public enum Rank implements Displayable
     TELNET_ADMIN("a", "Telnet Admin", Type.ADMIN, "STA", ChatColor.DARK_GREEN),
     SENIOR_ADMIN("a", "Senior Admin", Type.ADMIN, "SrA", ChatColor.GOLD),
     TELNET_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
-    SENIOR_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
+    SENIOR_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
+    SYSADMIN("a", "System-Admin", Type.ADMIN, "System-Admin", ChatColor.DARK_RED),
+    EXECUTIVE("a", "Executive", Type.ADMIN, "Executive", ChatColor.GOLD),
+    SYSADMIN_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
+    EXECUTIVE_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
     @Getter
     private final Type type;
     @Getter
@@ -93,6 +97,12 @@ public enum Rank implements Displayable
             case SENIOR_ADMIN:
             case SENIOR_CONSOLE:
                 return SENIOR_CONSOLE;
+            case SYSADMIN:
+            case SYSADMIN_CONSOLE:
+                return SYSADMIN_CONSOLE;
+            case EXECUTIVE:
+            case EXECUTIVE_CONSOLE:
+                return EXECUTIVE_CONSOLE;
             default:
                 return null;
         }
@@ -108,6 +118,12 @@ public enum Rank implements Displayable
             case SENIOR_ADMIN:
             case SENIOR_CONSOLE:
                 return SENIOR_ADMIN;
+            case SYSADMIN:
+            case SYSADMIN_CONSOLE:
+                return SYSADMIN;
+            case EXECUTIVE:
+            case EXECUTIVE_CONSOLE:
+                return EXECUTIVE;
             default:
                 return null;
         }

@@ -74,11 +74,11 @@ public class RankManager extends FreedomService
         }
         if (ConfigEntry.SERVER_SYSADMINS.getList().contains(player.getName()))
         {
-            return Title.SYSADMIN;
+            return Rank.SYSADMIN;
         }
         if (ConfigEntry.SERVER_EXECUTIVES.getList().contains(player.getName()))
         {
-            return Title.EXECUTIVE;
+            return Rank.EXECUTIVE;
         }
         if (ConfigEntry.SERVER_COOWNERS.getList().contains(player.getName()))
         {
