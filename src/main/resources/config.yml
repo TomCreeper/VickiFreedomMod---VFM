@@ -39,9 +39,11 @@ adminlist:
   # The amount of hours after which admins may be removed from the admin list
   clean_threshold_hours: 167
 
-  # Give the default CONSOLE senior admin privileges.
+  # Set the default CONSOLE admin privileges.
   # Handy in development environments.
-  console_is_senior: true
+  # Case insensitive.
+  # [Telnet_Admin, Senior_Admin, System_Admin, Executive]
+  console_rank: senior_admin
 
 # ForceIP configuration
 forceip:

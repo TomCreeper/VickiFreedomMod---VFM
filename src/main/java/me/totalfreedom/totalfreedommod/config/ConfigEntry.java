@@ -44,7 +44,7 @@ public enum ConfigEntry
     SERVER_PERMBAN_URL(String.class, "server.permban_url"),
     //
     ADMINLIST_CLEAN_THESHOLD_HOURS(Integer.class, "adminlist.clean_threshold_hours"),
-    ADMINLIST_CONSOLE_IS_SENIOR(Boolean.class, "adminlist.console_is_senior"),
+    ADMINLIST_CONSOLE_RANK(Boolean.class, "adminlist.console_rank"),
     //
     DISABLE_NIGHT(Boolean.class, "disable.night"),
     DISABLE_WEATHER(Boolean.class, "disable.weather"),

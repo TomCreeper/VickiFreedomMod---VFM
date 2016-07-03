@@ -14,9 +14,9 @@ public enum Rank implements Displayable
     SENIOR_ADMIN("a", "Senior Admin", Type.ADMIN, "SrA", ChatColor.GOLD),
     TELNET_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
     SENIOR_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
-    SYSADMIN("a", "System-Admin", Type.ADMIN, "System-Admin", ChatColor.DARK_RED),
-    EXECUTIVE("a", "Executive", Type.ADMIN, "Executive", ChatColor.GOLD),
-    SYSADMIN_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
+    SYSADMIN("a", "System-Admin", Type.ADMIN, "System-Admin", ChatColor.DARK_RED), // These can now be used as real ranks in a command.
+    EXECUTIVE("a", "Executive", Type.ADMIN, "Executive", ChatColor.GOLD), // The order of the position determines which rank is better.
+    SYSADMIN_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE), // Feel free do edit these as you wish.
     EXECUTIVE_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
     @Getter
     private final Type type;

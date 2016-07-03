@@ -99,7 +99,22 @@ public class RankManager extends FreedomService
         // CONSOLE?
         if (sender.getName().equals("CONSOLE"))
         {
-            return ConfigEntry.ADMINLIST_CONSOLE_IS_SENIOR.getBoolean() ? Rank.SENIOR_CONSOLE : Rank.TELNET_CONSOLE;
+            if(ConfigEntry.ADMINLIST_CONSOLE_RANK.getString().equalsIgnoreCase("Telnet_Admin"))
+            {
+                return Rank.TELNET_CONSOLE;
+            }
+            else if(ConfigEntry.ADMINLIST_CONSOLE_RANK.getString().equalsIgnoreCase("Senior_Admin"))
+            {
+                return Rank.SENIOR_CONSOLE;
+            }
+            else if(ConfigEntry.ADMINLIST_CONSOLE_RANK.getString().equalsIgnoreCase("SysAdmin") || ConfigEntry.ADMINLIST_CONSOLE_RANK.getString().equalsIgnoreCase("System_Admin"))
+            {
+                return Rank.SYSADMIN_CONSOLE;
+            }
+            else if(ConfigEntry.ADMINLIST_CONSOLE_RANK.getString().equalsIgnoreCase("Executive"))
+            {
+                return Rank.SYSADMIN_CONSOLE;
+            }
         }
 
         // Console admin, get by name
